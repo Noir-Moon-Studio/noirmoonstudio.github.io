@@ -53,23 +53,29 @@ p {
 /*The widths are in a percentage!*/
 
 header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
 	width: 100%;
-	height: 110px;
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 }
 
 header h1 {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 	margin: 0;
-	padding: 38px 0;
+	padding: 10px;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
+	width: 100%;
 	display: block;
-	padding: 46px 0;
+	padding: 10px 0;
 }
 
 header nav ul {
@@ -82,7 +88,7 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
-	padding: 10px 10px;
+	padding: 7px;
 }
 
 header nav ul li a{
@@ -102,7 +108,7 @@ header nav ul li a{
 }
 
 .top-section {
-	padding: 300px 0 0 0;
+	padding: 0;
 }
 
 .main-image {
@@ -133,9 +139,7 @@ header nav ul li a{
 	line-height: 25px;
 }
 
-.section-one,
-.section-two,
-.section-three {
+.section-one, .section-two, .section-three {
 	width: 100%;
 	height: auto;
 	padding: 10px 0;
@@ -184,7 +188,7 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 
 @media all and (min-width: 768px) {
 
-	.container{
+	.container {
 		max-width: 1200px;
 		width: 90%;
 		display: flex;
@@ -194,11 +198,17 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 		margin: 0 auto;
 	}
 
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+	}
+
 	.section-one, .section-two, .section-three {
 		width: 33%;
 		height: auto;
-		float: left;
-		border-top: 1px solid #eee;
+		border: none;
 	}
 
 	.section-one h4 {
@@ -281,26 +291,29 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 /*The widths are in a percentage!*/
 
  	header {
-		height: 110px;
+		justify-content: space-between;
 		margin: 0 auto;
-		border-bottom: none;
 	}
 
 	header h1 {
-		float: left;
+		width: 33%;
 		margin: 0;
-		padding: 38px 238px 0 0;
+		text-align: left;
+		border-bottom: none;
 	}
+
 	header h1 span {
 		color: #77a466;
 	}
 
 	header nav {
+		width: 55%;
 		display: inline;
-		padding: 46px 0;
 	}
 
 	header nav ul {
+		display: flex;
+		flex-wrap: nowrap;
 		margin: 0;
 		padding: 0;
 	}
@@ -309,14 +322,13 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: 1em;
-		float: left;
 
 	}
 
 	header nav ul li a{
 		text-decoration: none;
 		color:#77a466;
-		padding: 40px 10px;
+		padding: 30px 10px;
 	}
 
 /*The widths are in a percentage!*/
@@ -332,7 +344,6 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 
 	.main-image {
 		height: auto;
-		float: left;
 	}
 
 	.main-image img {
@@ -342,7 +353,6 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 
 	.main-title {
 		height: auto;
-		float: left;
 	}
 
 	.main-title h3 {
@@ -357,11 +367,16 @@ STYLES FOR DEVICES LARGER THAN MOBILE
 		line-height: 25px;
 	}
 
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
 	.section-one, .section-two, .section-three {
 		width: 33%;
 		height: auto;
-		float: left;
-		border-top: 1px solid #eee;
+		border: none;
 	}
 
 	.section-one h4 {
